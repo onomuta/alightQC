@@ -17,14 +17,14 @@ void setup()
   opc = new OPC(this, "127.0.0.1", 7890);
   
   //opc.ledGridCtrlA(0, width * 1/2, height * 1/2, width * 1/9 ,height * 1/60);
-  opc.ledStrip(0 * 64, 50, width * 1/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(1 * 64, 50, width * 2/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(2 * 64, 50, width * 3/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(3 * 64, 50, width * 4/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(4 * 64, 50, width * 5/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(5 * 64, 50, width * 6/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(6 * 64, 50, width * 7/9, height * 3/4, height/50/2, radians(90), false);
-  opc.ledStrip(7 * 64, 50, width * 8/9, height * 3/4, height/50/2, radians(90), false);
+  opc.ledStrip(0 * 64, 54, width * 1/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(1 * 64, 54, width * 2/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(2 * 64, 54, width * 3/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(3 * 64, 54, width * 4/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(4 * 64, 54, width * 5/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(5 * 64, 54, width * 6/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(6 * 64, 54, width * 7/9, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(7 * 64, 54, width * 8/9, height * 3/4, height/54/2, radians(90), true);
   
   
   
