@@ -6,7 +6,7 @@ PImage img;
 SyphonClient client;
 
 void settings() {
-  size(240, 100, P3D);
+  size(128, 128, P3D);
   PJOGL.profile = 1;
 }
 void setup()
@@ -15,25 +15,23 @@ void setup()
   // Connect to the local instance of fcserver. You can change this line to connect to another computer's fcserver
   opc = new OPC(this, "127.0.0.1", 7890);
   
-  //opc.ledGridCtrlA(0, width * 1/2, height * 1/2, width * 1/9 ,height * 1/60);
-  opc.ledStrip(0 * 64, 54, width * 1/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(1 * 64, 54, width * 3/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(2 * 64, 54, width * 5/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(3 * 64, 54, width * 7/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(4 * 64, 54, width * 9/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(5 * 64, 54, width * 11/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(6 * 64, 54, width * 13/16, height * 1/2, height/54, radians(-90), false);
-  opc.ledStrip(7 * 64, 54, width * 15/16, height * 1/2, height/54, radians(-90), false);
+  opc.ledStrip(0 * 64, 60, width * 1/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(1 * 64, 60, width * 2/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(2 * 64, 60, width * 3/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(3 * 64, 60, width * 4/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(4 * 64, 60, width * 5/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(5 * 64, 60, width * 6/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(6 * 64, 60, width * 7/8 - width/16, height * 3/4, height/54/2, radians(90), true);
+  opc.ledStrip(7 * 64, 60, width * 8/8 - width/16, height * 3/4, height/54/2, radians(90), true);
   
-  
-  //opc.ledStrip(0 * 64, 50, width * 1/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(1 * 64, 50, width * 2/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(2 * 64, 50, width * 3/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(3 * 64, 50, width * 4/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(4 * 64, 50, width * 5/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(5 * 64, 50, width * 6/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(6 * 64, 50, width * 7/9, height * 1/2, height/50, radians(-90), false);
-  //opc.ledStrip(7 * 64, 50, width * 8/9, height * 1/2, height/50, radians(-90), false);
+  opc.ledStrip(8 * 64, 60, width * 1/4, height * 4/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(9 * 64, 60, width * 3/4, height * 4/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(10 * 64, 60, width * 1/4, height * 3/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(11 * 64, 60, width * 3/4, height * 3/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(12 * 64, 60, width * 1/4, height * 2/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(13 * 64, 60, width * 3/4, height * 2/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(14 * 64, 60, width * 1/4, height * 1/8 - height * 1/16, height/60/2, radians(0), false);
+  opc.ledStrip(15 * 64, 60, width * 3/4, height * 1/8 - height * 1/16, height/60/2, radians(0), false);
 }
 
 void draw()

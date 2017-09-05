@@ -83,10 +83,10 @@ public class OPC
   }
   
   //ctrl+A LED
-  void ledGridCtrlA(int index, float x, float y, float spacingX ,float spacingY)
-  {
-    ledGrid(index, 8, 64, x, y, spacingX, spacingY, 0, false);
-  }
+  //void ledGridCtrlA(int index, float x, float y, float spacingX ,float spacingY)
+  //{
+  //  ledGrid(index, 8, 64, x, y, spacingX, spacingY, 0, false);
+  //}
   
 
   // Should the pixel sampling locations be visible? This helps with debugging.
