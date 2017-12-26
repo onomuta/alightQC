@@ -16,8 +16,9 @@ syphonで何か送れば光るはずです
 
 
 
-### ctrlA/ctrlA.pde
+#### ctrlA/ctrlA.pde
 Syphonを受け取ってfadecandyを光らせるやつ
 
-### alight.qtz
-キーボードやtouchOSCを受信して素材を再生します。
+#### alight.qtz
+キーボードやtouchOSCを受信して素材を再生、
+Syphonで送信します。
